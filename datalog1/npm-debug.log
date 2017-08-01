@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   '.' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\ISAAC SHAIKH\\Downloads\\Plugin\\datalog1',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache\datalog1\0.0.1\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle datalog1@0.0.1~prepublish: datalog1@0.0.1
+11 silly lifecycle datalog1@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\ISAAC SHAIKH\\AppData\\Roaming\\npm-cache\\datalog1\\0.0.1\\package.tgz',
+12 verbose tar pack   'C:\\Users\\ISAAC SHAIKH\\Downloads\\Plugin\\datalog1' ]
+13 verbose tarball C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache\datalog1\0.0.1\package.tgz
+14 verbose folder C:\Users\ISAAC SHAIKH\Downloads\Plugin\datalog1
+15 verbose addLocalTarball adding from inside cache C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache\datalog1\0.0.1\package.tgz
+16 verbose correctMkdir C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd datalog1@0.0.1
+18 verbose afterAdd C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache\datalog1\0.0.1\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache\datalog1\0.0.1\package\package.json written
+21 silly publish { name: 'datalog1',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: '',
+21 silly publish   cordova: { id: 'cordova.plugin.datalog1', platforms: [ 'android' ] },
+21 silly publish   keywords: [ 'ecosystem:cordova', 'cordova-android' ],
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'datalog1@0.0.1',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '19f2fc854f2d7203a42feceb950119dd5bcc283e',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name datalog1
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'datalog1',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'datalog1',
+26 silly mapToRegistry   name: 'datalog1',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/datalog1
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache\datalog1\0.0.1\package.tgz
+30 verbose request uri https://registry.npmjs.org/datalog1
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 8:58:42 AM
+33 verbose request using bearer token for auth
+34 verbose request id c2d8d9f50e45154b
+35 http request PUT https://registry.npmjs.org/datalog1
+36 http 403 https://registry.npmjs.org/datalog1
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Tue, 01 Aug 2017 03:28:47 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin18033-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1501558127.534659,VS0,VE898',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating C:\Users\ISAAC SHAIKH\AppData\Roaming\npm-cache\registry.npmjs.org\datalog1 on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : datalog1
+40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid datalog1
+43 verbose cwd C:\Users\ISAAC SHAIKH\Downloads\Plugin\datalog1
+44 error Windows_NT 6.3.9600
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish" "."
+46 error node v6.11.1
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 0.0.1." : datalog1
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
